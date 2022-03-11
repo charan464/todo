@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <style>
+ button:hover
+ {
+    background-color: rgba(138, 138, 138, 0.842);
+    font-weight: bold;
+ }
+
+
+ 
+ header .navbar{padding: .5rem 0;}
+
+header nav.navbar .navbar-brand{color:#fff;}
+
+
+
+section.todo-outer {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+
+.todo-inner {
+    width: 100%;
+    float: left;
+    padding: 40px;
+}
+
+
+table tr td button {
+    background: no-repeat;
+    border: none;
+    padding: 0;
+}
+
+tr
+{
+  background-color: seashell;
+}
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+    <header class="bg-dark mb-3">   
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar justify-content-between">
+                <a class="navbar-brand" style="color: whitesmoke;">TODO LIST</a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchtextbox" />
+                </form>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="todo-outer">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-md-10">
+              <div class="todo-inner">
+                <div class="form-row">
+                  <div class="col-md-8 col-xs-4  mr-xs-2 mr-md-2">
+                    <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />  &ensp;
+                    <input type="hidden" id="saveindex">
+                  </div> <div> 
+                      <button  type="button" class="btn btn-success" id="addtaskbtn">
+                        Add Task
+                      </button></div>
+                      <div>
+                      <button type="button" class="btn btn-success mr-xs-2 mr-md-2"     style="display: none;" id="savetaskbtn">
+                        Save Task
+                      </button></div>
+                      &ensp;
+                      <div>
+                      <button type="button" id="deleteallbtn" class="btn btn-danger ml-xs-2 ml-md-2" >
+                        Delete All
+                      </button></div>
+                  
+                </div>
+                <div class="to-do-output">
+                  <table class="table mt-3 mb-0" id="addedtasklist">   
+                               
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="todo.js"> </script>
+
+</body>
+</html>
